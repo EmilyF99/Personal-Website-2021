@@ -1,0 +1,33 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+
+body {
+    background-color:#282634;
+    color: white;
+    text-align: center;
+}
+nav {
+    position:fixed;
+    background-color: #486060;
+    width:100%;
+}
+nav li{
+    display:inline;
+    padding: 2em;
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+}
