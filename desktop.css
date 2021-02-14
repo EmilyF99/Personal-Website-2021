@@ -25,6 +25,27 @@ body {
                          "contact"
                          "footer";
 }
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2em;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+    list-style: square;
+}
+
 nav {
     position:fixed;
     background-color: #486060;
@@ -38,13 +59,72 @@ nav li{
     grid-area:nav-behind;
 }
 
-.landing {
+.landing h1 {
     grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    font-size:6em;
+}
+
+.landing h1:nth-of-type(2) {
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    font-size:6em;
+    color: magenta;
+    position: absolute;
+    z-index: -1;
+    top:72px;
+    left: 340px;
+}
+
+.landing h1:nth-of-type(3) {
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    font-size:6em;
+    color: cyan;
+    position: absolute;
+    top:62px;
+    left: 336px;
+    z-index: -2;
+}
+
+.landing p {
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    font-size:4em;
+    color: white;
+}
+
+.landing p:nth-of-type(2){
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    font-size:4em;
+    color: magenta;
+    position: absolute;
+    top: 201px;
+    left: 310px;
+    z-index: -1;
+}
+
+.landing p:nth-of-type(3){
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    font-size:4em;
+    color: cyan;
+    position: absolute;
+    top: 194px;
+    left: 304px;
+    z-index: -2;
 }
 
 .about {
     grid-area:about;
     padding-bottom: 5em;
+}
+
+.about-img {
+    height: 200px;
+    width:200px;
+    background-color:white;
 }
 
 .history {
@@ -62,9 +142,39 @@ nav li{
     padding-bottom: 5em;
 }
 
+.project-1 {
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
+.project-2 {
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
+.project-3 {
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
 .experiences {
     grid-area:experiences;
     padding-bottom: 5em;
+}
+
+.achievement-1 {
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
+.achievement-2{
+    height: 300px;
+    width: 300px;
+    background-color:white;
 }
 
 .achievements {
@@ -82,6 +192,24 @@ nav li{
     padding-bottom: 5em;
 }
 
+.twitter{
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
+.linkedIn{
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
+.gitHub{
+    height: 300px;
+    width: 300px;
+    background-color:white;
+}
+
 .contact {
     grid-area:contact;
     padding-bottom: 5em;
@@ -90,22 +218,5 @@ nav li{
 footer {
     grid-area: footer;
 }
-h1 {
-    font-family: 'Poppins', sans-serif;
-}
 
-h3 {
-    font-family: 'Poppins', sans-serif;
-    padding-top: 2em;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    padding: 1em;
-}
-
-li {
-    font-family: 'Poppins', sans-serif;
-    list-style: square;
-}
 
