@@ -62,7 +62,7 @@ nav {
 }
 nav li{
     display:inline;
-    padding: 2em;
+    padding: 1em;
 }
 .nav-behind {
     grid-area:nav-behind;
