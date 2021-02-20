@@ -214,6 +214,7 @@ nav li{
     grid-template-rows: auto; 
     grid-template-areas:"project-title project-title project-title"
                         "project-1 project-2 project-3"
+                        "project-1-label project-2-label project-3-label"
                         "project-txt project-txt project-txt";
 }
 .project-title {
@@ -232,6 +233,10 @@ nav li{
     margin-top: 5em;
 }
 
+.project-1-label {
+    grid-area:project-1-label;
+}
+
 .project-2 {
     grid-area:project-2;
     height: 300px;
@@ -243,6 +248,10 @@ nav li{
     z-index: -1;
     margin: 3em;
     margin-top: 5em;
+}
+
+.project-2-label {
+    grid-area:project-2-label;
 }
 
 .project-3 {
@@ -258,10 +267,14 @@ nav li{
     margin-top: 5em;
 }
 
+.project-3-label {
+    grid-area:project-3-label;
+}
 .web-port { 
     height: 300px;
     width: 300px;
 }
+
 .baby-maze {
     height: 300px;
     width: 300px;
@@ -274,7 +287,11 @@ nav li{
 .project-txt {
     grid-area:project-txt;
 }
-
+.project-txt  p:nth-of-type(2) {
+    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
+    margin-left: 15em;
+    margin-right:15em;
+}
 .projects-experiences-divide {
     grid-area:projects-experiences-divide;
     background: linear-gradient(45deg,#F8C8DC ,#96DED1);
