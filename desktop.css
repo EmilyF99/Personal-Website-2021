@@ -248,6 +248,18 @@ nav li{
     margin: 3em;
     margin-top: 5em;
 }
+.web-port { 
+    height: 300px;
+    width: 300px;
+}
+.baby-maze {
+    height: 300px;
+    width: 300px;
+}
+.lap-repair {
+    height: 300px;
+    width: 300px;
+}
 
 .project-txt {
     grid-area:project-txt;
@@ -303,32 +315,42 @@ nav li{
 
 .achievement-1 {
     grid-area:achievement-1;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-color:white;
     position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin:10em;
+    margin:8.5em;
     margin-top:6em;
-    margin-bottom:5em;
+    margin-bottom:2em;
     z-index: -1;
 }
 
-.achievement-2{
+.achievement-2 {
     grid-area:achievement-2;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     background-color:white;
     position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin:10em;
+    margin:8.5em;
     margin-top:6em;
-    margin-bottom:5em;
+    margin-bottom:2em;
     z-index: -1;
+}
+
+.aws-cert{
+    height: 350px;
+    width: 350px;
+}
+
+.mh-cert {
+    height: 350px;
+    width: 350px;
 }
 
 .achievements-blog-divide {
