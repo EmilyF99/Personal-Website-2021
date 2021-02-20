@@ -394,6 +394,7 @@ nav li{
     grid-template-rows: auto; 
     grid-template-areas:"socials-title socials-title socials-title"
                         "twitter linkedIn github"
+                        "twitter-lnk linkedIn-lnk github-lnk"
                         "socials-txt socials-txt socials-txt";
 }
 
@@ -418,7 +419,16 @@ nav li{
     z-index: -1;
 }
 
-.linkedIn{
+.twitter-img {
+    height: 300px;
+    width: 300px;
+}
+.twitter-lnk {
+    grid-area:twitter-lnk;
+    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
+    margin: 2em;
+}
+.linkedIn {
     grid-area:linkedIn;
     height: 300px;
     width: 300px;
@@ -430,6 +440,17 @@ nav li{
     margin: 3em;
     margin-top: 5em;
     z-index: -1;
+}
+
+.linkedIn-img {
+    height: 300px;
+    width: 300px;
+}
+
+.linkedIn-lnk {
+    grid-area:linkedIn-lnk;
+    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
+    margin: 2em;
 }
 
 .github{
@@ -444,6 +465,17 @@ nav li{
     margin: 3em;
     margin-top: 5em;
     z-index: -1;
+}
+
+.github-img {
+    height: 300px;
+    width: 300px;
+}
+
+.github-lnk {
+    grid-area:github-lnk;
+    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
+    margin: 2em;
 }
 .socials-contact-divide {
     grid-area:socials-contact-divide;
