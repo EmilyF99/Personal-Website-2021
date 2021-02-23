@@ -1,158 +1,51 @@
-* {
-    text-decoration: none;
-    list-style: none;
-    margin: 0px;
-}
-
-html {
-    scroll-behavior: smooth;
-  }
-
-body {
-    background-color:#282634;
-    color: white;
-    text-align: center;
-
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto; 
-    grid-template-areas: "nav-behind"
-                         "landing"
-                         "about"
-                         "about-history-divide"
-                         "history"
-                         "history-goals-divide"
-                         "goals"
-                         "goals-projects-divide"
-                         "projects"
-                         "projects-experiences-divide"
-                         "experiences"
-                         "experiences-achievements-divide"
-                         "achievements"
-                         "achievements-blog-divide"
-                         "blog"
-                         "blog-socials-divide"
-                         "socials"
-                         "socials-contact-divide"
-                         "contact"
-                         "contact-footer-divide"
-                         "footer";
-}
-
-h1 {
-    font-family: 'Poppins', sans-serif;
-}
-
-h3 {
-    font-family: 'Poppins', sans-serif;
-    padding-top: 2em;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    padding: 1em;
-    font-size: 1.2em;
-}
-
-li {
-    font-family: 'Poppins', sans-serif;
-    list-style: square;
-}
-
-nav {
-    position:fixed;
-    background-image:linear-gradient(45deg,#F8C8DC ,#96DED1);
-    width:100%;
-    padding-bottom: 2em;
-    padding-top:2em;
-}
 nav li{
     display:inline;
     padding: 1em;
 }
-.nav-behind {
-    grid-area:nav-behind;
-}
-.landing {
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    z-index: -3;
-}
+
 
 .landing h1 {
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
     font-size:6em;
 }
 
 .landing h1:nth-of-type(2) {
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
     font-size:6em;
-    color: magenta;
-    position: absolute;
-    z-index: -1;
     top:72px;
     left: 340px;
 }
 
 .landing h1:nth-of-type(3) {
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
     font-size:6em;
-    color: cyan;
-    position: absolute;
     top:62px;
     left: 336px;
-    z-index: -2;
 }
 
 .landing p {
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
     font-size:4em;
-    color: white;
 }
 
 .landing p:nth-of-type(2){
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
     font-size:4em;
-    color: magenta;
-    position: absolute;
     top: 201px;
     left: 310px;
-    z-index: -1;
 }
 
 .landing p:nth-of-type(3){
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
     font-size:4em;
-    color: cyan;
-    position: absolute;
     top: 194px;
     left: 304px;
-    z-index: -2;
 }
 
 .about {
-    grid-area:about;
-    padding-bottom: 8em;
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto; 
+    padding-bottom: 8em; 
     grid-template-areas: "about-txt about-img";
 }
 .about-txt {
     grid-area:about-txt;
-    margin-top: 5em;
 }
 .about-img {
-    grid-area:about-img;
-    background-color:white;
     height: 350px;
-    width:350px;
-    margin: 1em;
+    width: 350px;
     margin-top: 4em;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
@@ -163,113 +56,37 @@ nav li{
     height: 350px;
     width:350px;
 }
-.about-history-divide {
-    grid-area:about-history-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
-
-.history {
-    grid-area:history;
-    padding-bottom: 12em;
-}
-
-.history-goals-divide {
-    grid-area:history-goals-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
-
-.goals {
-    grid-area:goals;
-    padding-bottom: 12em;
-}
-
-.goals li {
-    list-style: none;
-}
-.goals-projects-divide {
-    grid-area:goals-projects-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
 
 .projects {
-    grid-area:projects;
-    padding-bottom: 12em;
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto; 
     grid-template-areas:"project-title project-title project-title"
                         "project-1 project-2 project-3"
                         "project-1-label project-2-label project-3-label"
                         "project-txt project-txt project-txt";
 }
-.project-title {
-    grid-area:project-title;
-}
 .project-1 {
-    grid-area:project-1;
     height: 300px;
     width: 300px;
-    background-color:white;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    z-index: -1;
-    margin: 3em;
-    margin-top: 5em;
-}
-
-.project-1-label {
-    grid-area:project-1-label;
 }
 
 .project-2 {
-    grid-area:project-2;
     height: 300px;
     width: 300px;
-    background-color:white;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    z-index: -1;
-    margin: 3em;
-    margin-top: 5em;
-}
-
-.project-2-label {
-    grid-area:project-2-label;
 }
 
 .project-3 {
-    grid-area:project-3;
     height: 300px;
     width: 300px;
-    background-color:white;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    z-index: -1;
-    margin: 3em;
-    margin-top: 5em;
 }
 
-.project-3-label {
-    grid-area:project-3-label;
-}
 .web-port { 
     height: 300px;
     width: 300px;
@@ -284,90 +101,31 @@ nav li{
     width: 300px;
 }
 
-.project-txt {
-    grid-area:project-txt;
-}
 .project-txt  p:nth-of-type(2) {
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
     margin-left: 15em;
     margin-right:15em;
 }
-.projects-experiences-divide {
-    grid-area:projects-experiences-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
-.experiences {
-    grid-area:experiences;
-    padding-bottom: 12em;
-}
-
-.experiences-achievements-divide {
-    grid-area:experiences-achievements-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
 
 .achievements { 
-    grid-area:achievements;
-    padding-bottom: 12em;
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto; 
     grid-template-areas:"achievements-title achievements-title"
                         "achievement-1 achievement-2"
                         "achievement-1-label achievement-2-label";
 }
 
-.achievements-title {
-    grid-area:achievements-title;
-
-}
-
-.achievement-1-label {
-    grid-area:achievement-1-label;
-}
-
-.achievement-2-label {
-   grid-area:achievement-2-label;
-}
-
 .achievement-1 {
-    grid-area:achievement-1;
     height: 350px;
     width: 350px;
-    background-color:white;
-    position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin:8.5em;
-    margin-top:6em;
-    margin-bottom:2em;
-    z-index: -1;
 }
 
 .achievement-2 {
-    grid-area:achievement-2;
     height: 350px;
     width: 350px;
-    background-color:white;
-    position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin:8.5em;
-    margin-top:6em;
-    margin-bottom:2em;
-    z-index: -1;
 }
 
 .aws-cert{
@@ -380,83 +138,32 @@ nav li{
     width: 350px;
 }
 
-.achievements-blog-divide {
-    grid-area:achievements-blog-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
-
-.blog {
-    grid-area:blog;
-    padding-bottom: 5em;
-}
-.blog-socials-divide {
-    grid-area:blog-socials-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
 .socials {
-    grid-area:socials;
-    padding-bottom: 12em;
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto; 
     grid-template-areas:"socials-title socials-title socials-title"
                         "twitter linkedIn github"
                         "twitter-lnk linkedIn-lnk github-lnk"
                         "socials-txt socials-txt socials-txt";
 }
 
-.socials-title {
-    grid-area:socials-title
-}
-
-.socials-txt {
-    grid-area:socials-txt;
-}
 .twitter{
-    grid-area:twitter;
     height: 300px;
     width: 300px;
-    background-color:white;
-    position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin: 3em;
-    margin-top: 5em;
-    z-index: -1;
 }
 
 .twitter-img {
     height: 300px;
     width: 300px;
 }
-.twitter-lnk {
-    grid-area:twitter-lnk;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin: 2em;
-}
+
 .linkedIn {
-    grid-area:linkedIn;
     height: 300px;
     width: 300px;
-    background-color:white;
-    position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin: 3em;
-    margin-top: 5em;
-    z-index: -1;
 }
 
 .linkedIn-img {
@@ -464,60 +171,15 @@ nav li{
     width: 300px;
 }
 
-.linkedIn-lnk {
-    grid-area:linkedIn-lnk;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin: 2em;
-}
-
 .github{
-    grid-area:github;
     height: 300px;
     width: 300px;
-    background-color:white;
-    position: relative;
     border: 20px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
-    margin: 3em;
-    margin-top: 5em;
-    z-index: -1;
 }
 
 .github-img {
     height: 300px;
     width: 300px;
 }
-
-.github-lnk {
-    grid-area:github-lnk;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin: 2em;
-}
-.socials-contact-divide {
-    grid-area:socials-contact-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
-.contact {
-    grid-area:contact;
-    padding-bottom: 12em;
-}
-.contact-footer-divide {
-    grid-area:contact-footer-divide;
-    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
-    margin-bottom: 5em;
-    width: 100%;
-    height: 20px;
-    filter: blur(1px);
-    z-index: -1;
-}
-footer {
-    grid-area: footer;
-}
-
-
