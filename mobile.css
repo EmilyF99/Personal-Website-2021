@@ -42,33 +42,52 @@ nav li{
     font-size:4em;
 }
 
-.landing h1:nth-of-type(2) {
-    font-size:4em;
-    top:72px;
-    left: 340px;
+.landing h1::before {
+    content:attr(title);
+    position: absolute;
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    color: magenta;
+    position: absolute;
+    z-index: -1;
+    left: 15.5%;
 }
 
-.landing h1:nth-of-type(3) {
-    font-size:4em;
-    top:62px;
-    left: 336px;
+.landing h1::after {
+    content:attr(title);
+    position: absolute;
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    color: cyan;
+    z-index: -2;
+    left: 16%;
 }
+
 
 .landing p {
     font-size:2em;
 }
 
-.landing p:nth-of-type(2){
-    font-size:2em;
-    top: 201px;
-    left: 310px;
-}
-
-.landing p:nth-of-type(3){
-    font-size:2em;
-    top: 194px;
-    left: 304px;
-}
+.landing p::before{
+    content:attr(sub-title);
+        position: absolute;
+        grid-area:landing;
+        font-family:'Open Sans', sans-serif;
+        color: magenta;
+        position: absolute;
+        z-index: -1;
+        left: 26.5%;
+    }
+    
+    .landing p::after {
+        content:attr(sub-title);
+        position: absolute;
+        grid-area:landing;
+        font-family:'Open Sans', sans-serif;
+        color: cyan;
+        z-index: -2;
+        left: 27.2%;
+    }
 
 .about {
     padding-bottom: 8em; 

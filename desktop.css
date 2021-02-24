@@ -6,38 +6,57 @@ nav li{
 .landing {
     background: linear-gradient(45deg,#F8C8DC ,#96DED1);
     z-index: -3;
+    position: relative;
 }
 
 .landing h1 {
     font-size:6em;
+    top:auto;
+}
+.landing h1::before {
+    content:attr(title);
+    position: absolute;
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    color: magenta;
+    position: absolute;
+    z-index: -1;
+    left: 24.8%;
 }
 
-.landing h1:nth-of-type(2) {
-    font-size:6em;
-    top:72px;
-    left: 340px;
-}
-
-.landing h1:nth-of-type(3) {
-    font-size:6em;
-    top:62px;
-    left: 336px;
+.landing h1::after {
+    content:attr(title);
+    position: absolute;
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    color: cyan;
+    z-index: -2;
+    left: 25.2%;
 }
 
 .landing p {
     font-size:4em;
 }
 
-.landing p:nth-of-type(2){
-    font-size:4em;
-    top: 201px;
-    left: 310px;
+.landing p::before{
+content:attr(sub-title);
+    position: absolute;
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    color: magenta;
+    position: absolute;
+    z-index: -1;
+    left: 27.2%;
 }
 
-.landing p:nth-of-type(3){
-    font-size:4em;
-    top: 194px;
-    left: 304px;
+.landing p::after {
+    content:attr(sub-title);
+    position: absolute;
+    grid-area:landing;
+    font-family:'Open Sans', sans-serif;
+    color: cyan;
+    z-index: -2;
+    left: 27.6%;
 }
 
 .about {

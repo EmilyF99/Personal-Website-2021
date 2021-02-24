@@ -82,42 +82,10 @@ nav {
     font-family:'Open Sans', sans-serif;
 }
 
-.landing h1:nth-of-type(2) {
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
-    color: magenta;
-    position: absolute;
-    z-index: -1;
-}
-
-.landing h1:nth-of-type(3) {
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
-    color: cyan;
-    position: absolute;
-    z-index: -2;
-}
-
 .landing p {
     grid-area:landing;
     font-family:'Open Sans', sans-serif;
     color: white;
-}
-
-.landing p:nth-of-type(2){
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
-    color: magenta;
-    position: absolute;
-    z-index: -1;
-}
-
-.landing p:nth-of-type(3){
-    grid-area:landing;
-    font-family:'Open Sans', sans-serif;
-    color: cyan;
-    position: absolute;
-    z-index: -2;
 }
 
 .about {
