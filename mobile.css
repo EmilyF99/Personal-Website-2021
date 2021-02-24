@@ -1,10 +1,41 @@
 p {
     font-size: 1em;
 }
+nav{
+    display:none;
+}
+
+nav:target {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shownav {
+    height: 5em;
+    width: 8em;
+    padding-top: 1em;
+    top: 10px;
+    left: 8px;
+    display: block;
+    position: absolute;
+    border: 0.2em solid white;
+    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
+    position:fixed;
+}
 
 nav li{
-    display:inline;
-    padding: 1em;
+    padding:1em;
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.nav-behind {
+    color: transparent;
+    padding:2em;
 }
 
 .landing h1 {
@@ -55,6 +86,9 @@ nav li{
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
     z-index: -1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 .about-image {
     height: 200px;
@@ -78,6 +112,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .project-2 {
@@ -86,6 +123,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .project-3 {
@@ -94,6 +134,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .web-port { 
@@ -111,8 +154,9 @@ nav li{
 }
 
 .project-txt  p:nth-of-type(2) {
-    margin-left: 25em;
-    margin-right:25em;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .achievements { 
@@ -129,6 +173,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .achievement-2 {
@@ -137,6 +184,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .aws-cert{
@@ -166,6 +216,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .twitter-img {
@@ -183,6 +236,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .linkedIn-img {
@@ -201,6 +257,9 @@ nav li{
     border: 10px solid transparent;
     border-image: linear-gradient(45deg,#F8C8DC ,#96DED1);
     border-image-slice:1;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .github-img {
