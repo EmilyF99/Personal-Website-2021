@@ -57,6 +57,7 @@ p {
 li {
     font-family: 'Poppins', sans-serif;
     list-style: square;
+    
 }
 nav {
     position:fixed;
@@ -64,6 +65,7 @@ nav {
     width:100%;
     padding-bottom: 2em;
     padding-top:2em;
+    color:#551A8B ; 
 }
 .nav-behind {
     grid-area:nav-behind;
@@ -376,6 +378,15 @@ nav {
     height: 20px;
     filter: blur(1px);
     z-index: -1;
+}
+
+.submit {
+    background: linear-gradient(45deg,#F8C8DC ,#96DED1);
+    font-family: 'Poppins', sans-serif;
+    color:#551A8B ; 
+    font-size: 1.2em;
+    padding: 1.8em;
+    margin-top: 5em;
 }
 footer {
     grid-area: footer;

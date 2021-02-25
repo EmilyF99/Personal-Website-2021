@@ -2,7 +2,9 @@ nav li{
     display:inline;
     padding: 1em;
 }
-
+.shownav {
+    visibility: hidden;
+}
 .landing {
     background: linear-gradient(45deg,#F8C8DC ,#96DED1);
     z-index: -3;
