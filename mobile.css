@@ -39,7 +39,11 @@ nav li{
 }
 
 .landing h1 {
-    font-size:4em;
+    font-size:  3.5em;
+    white-space: nowrap;
+    position: absolute;
+    left:15%;
+
 }
 
 .landing h1::before {
@@ -48,9 +52,9 @@ nav li{
     grid-area:landing;
     font-family:'Open Sans', sans-serif;
     color: magenta;
-    position: absolute;
     z-index: -1;
-    left: 15.5%;
+    left: 0.5%;
+    
 }
 
 .landing h1::after {
@@ -60,34 +64,10 @@ nav li{
     font-family:'Open Sans', sans-serif;
     color: cyan;
     z-index: -2;
-    left: 16%;
-}
-
-
-.landing p {
-    font-size:2em;
-}
-
-.landing p::before{
-    content:attr(sub-title);
-        position: absolute;
-        grid-area:landing;
-        font-family:'Open Sans', sans-serif;
-        color: magenta;
-        position: absolute;
-        z-index: -1;
-        left: 26.5%;
-    }
+    left: -0.5%;
     
-    .landing p::after {
-        content:attr(sub-title);
-        position: absolute;
-        grid-area:landing;
-        font-family:'Open Sans', sans-serif;
-        color: cyan;
-        z-index: -2;
-        left: 27.2%;
-    }
+}
+
 
 .about {
     padding-bottom: 8em; 
