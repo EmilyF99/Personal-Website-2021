@@ -43,6 +43,7 @@ nav li{
     white-space: nowrap;
     position: absolute;
     left:15%;
+    z-index:-1;
 
 }
 
@@ -52,7 +53,7 @@ nav li{
     grid-area:landing;
     font-family:'Open Sans', sans-serif;
     color: magenta;
-    z-index: -1;
+    z-index: -2;
     left: 0.5%;
     
 }
@@ -63,7 +64,7 @@ nav li{
     grid-area:landing;
     font-family:'Open Sans', sans-serif;
     color: cyan;
-    z-index: -2;
+    z-index: -3;
     left: -0.5%;
     
 }
